@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div id="background-container">
+        <div id="background-gradient"></div>
+        <div id="background-overlay"></div>
+        <div id="planets"></div>
+
+    </div>
+    <button type="button" id="resume-button" class="tooltip"> <img src="icons\paper-file-text.svg">
+        <span class="tooltiptext">Resume</span>
+    </button>
+
+    </div>
+    <div id="top-main-container">
+        <div id="top-landing-container">
+            <h2>Hi There! I'm Jesse :)</h2>
+            <h1>A Frontend Engineer. I create stylized sites with highly optimized code.</h1>
+            <h3>Over 5 years of experience working with programming tools to deliver quality results to clients. I have expert knowledge of frontend engineering, software testing, and web development.</h3>
+            <input type="button" value="Hire Me Now!">
+        </div>
+        <div id="top-hover-graphics">
+            <img src="slice-of-pizza.256x255.png">
+        </div>
+    </div>
+    <div id="main-projects-container">
+        <h4 class="section-header">Projects</h4>
+        <div id="projects-container">
+            <div id="card-container">
+                <div class="card">
+                    <img src="project-pictures\TeslaPage.JPG">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Tesla Landing Page Clone
+                        </h3>
+                        <p class="card-description">
+                            A clone project of Tesla's landing page. I've managed to fix several bugs found on the live Tesla site, and managed to score higher rankings in performance and SEO using Google Lighthouse.
+                        </p>
+                        <div class="card-buttons">
+                            <input type="button" value="View Project">
+                            <input type="button" value="View Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="project-pictures\adminDashboard.png">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Admin Dashboard
+                        </h3>
+                        <p class="card-description">
+                            A complex multi-page dashboard app to track product sales. Charts were created using Charts.js. Light theme and dark theme available.
+                        </p>
+                        <div class="card-buttons">
+                            <input type="button" value="View Project">
+                            <input type="button" value="View Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="project-pictures\shot1.PNG">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Day Dots Reference
+                        </h3>
+                        <p class="card-description">
+                            A tool designed to help the restaurant industry take out human error on mislabeling food products, to prevent food waste and health hazards. Successfully deployed in multiple restaurants and improved workplace efficiency.
+                        </p>
+                        <div class="card-buttons">
+                            <input type="button" value="View Project">
+                            <input type="button" value="View Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="project-pictures\31367.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Resume Site
+                        </h3>
+                        <p class="card-description">
+                            My personal online resume site. Built using scalable code in React so adding new content is simple and all handled in one respective component.
+                        </p>
+                        <div class="card-buttons">
+                            <input type="button" value="View Project">
+                            <input type="button" value="View Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="project-pictures\preview.png">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Ecommerce Site
+                        </h3>
+                        <p class="card-description">
+                            Coming soon.
+    
+    
+                        </p>
+                        <div class="card-buttons">
+                            <input type="button" value="View Project">
+                            <input type="button" value="View Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top-icon-bar">
+            <img src="icons\mobile-phone.svg" class="svg-filter">
+            <p>Mobile Friendly</p>
+            <img src="icons\web.svg" class="svg-filter">
+            <p>Search Engine Optimized</p>
+            <img src="icons\accessible.svg" class="svg-filter">
+            <p>Accessible</p>
+            <img src="icons\tachometer-fast-alt.svg" class="svg-filter">
+            <p>High Performing</p>
+        </div>
+    </div>
+    <div id="skills-and-about">
+        <h4 class="section-header">Top Technical Skills</h4>
+        <div class="skill-card-container">
+            <div class="skill-cards">
+                <img src="skills-icons\javascript-js.256x256.png" class="skill-icons">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\typescript-icon.256x256.png" class="skill-icons">
+                <p>TypeScript</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\react.256x228.png" class="skill-icons">
+                <p>React</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\html5.226x256.png" class="skill-icons">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\css3.226x256.png" class="skill-icons">
+                <p>CSS3</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\file-type-sass.256x192.png" class="skill-icons">
+                <p>SASS</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\bootstrap.256x256.png" class="skill-icons">
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\jquery-plain.256x247.png" class="skill-icons">
+                <p>jQuery</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\python.256x254.png" class="skill-icons">
+                <p>Python</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\c-sharp-c.456x512.png" class="skill-icons">
+                <p>C#</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\php.256x256.png" class="skill-icons">
+                <p>PHP</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\git.256x256.png" class="skill-icons">
+                <p>Git</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\github.256x249.png" class="skill-icons">
+                <p>GitHub</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\webpack-plain.231x256.png" class="skill-icons">
+                <p>WebPack</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\file-type-babel2.211x256.png" class="skill-icons">
+                <p>Babel</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\wordpress.256x256 (1).png" class="skill-icons">
+                <p>Wordpress</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\chrome-devtools.256x256.png" class="skill-icons">
+                <p>Chrome DevTools</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\google-analytics.256x256.png" class="skill-icons">
+                <p>Google Analytics</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\file-type-firebase.187x256.png" class="skill-icons">
+                <p>FireBase</p>
+            </div>
+        </div>
+        <div id="random-facts">
+            <h4 class="section-header">3 random facts about me</h4>
+            <ol>
+                <li>I'm part 107 certified by the FAA to fly drones commercially.</li>
+                <li>I was nationally recognized by Red Robin as their biggest fan when I was a kid.</li>
+                <li>As hobbies, I'm really into in game design, robotics, animation, and voice acting.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="contact-and-resume">
+        <br>
+        <br>
+        <h4 class="section-header">Let's get in contact!</h4>
+        <div id="personals-container">
+            <a href="">JesseClemProgramming@gmail.com</a>
+            <a href="">1(360)701-2737</a>
+            <a href=""><img src="icons\github.svg">GitHub</a>
+            <a href=""><img src="icons\social-linkedin.svg">Linkedin</a>
+        </div>
+        <div id="form-container">
+            <form id="contactForm">
+
+                <div class="alert">Your message has been sent</div>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Your name">
+                
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="lastname" placeholder="555-555-5555">
+            
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" placeholder="Company Name">
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" style="height:135px"></textarea>
+                <input type="submit" value="Submit">
+                <!--<input type="submit" value="Submit" class="g-recaptcha" 
+                data-sitekey="6LePYvkiAAAAAHkYnAzxuc3JxzVZHxdnHhxLkFil" 
+                data-callback='onSubmit' 
+                data-action='submit'> -->
+              </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
