@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCHJjiGbX-oYqMRzVkk8khfYzvFDvFWXoE",
+    apiKey: "AIzaSyBkijwV5wuX5Pr-fOX_i86OsAHsur433sU",
     authDomain: "resumeemail-bcc6e.firebaseapp.com",
     databaseURL: "https://resumeemail-bcc6e-default-rtdb.firebaseio.com",
     projectId: "resumeemail-bcc6e",
@@ -22,21 +22,19 @@ const firebaseConfig = {
   function submitForm(e){
     e.preventDefault();
     var name = getInputVal('name');
-    var company = getInputVal('company');
     var email = getInputVal('email');
     var message = getInputVal('message');
-    var phone = getInputVal('phone');
 
     //save message
-    saveMessage(name,company, email, phone, message);
+    saveMessage(name, email, message);
 
     //show alert
     document.querySelector('.alert').style.display = "block";
 
-    // Hide alert after 3 seconds
+    // Hide alert after 4 seconds
     setTimeout(function(){
         document.querySelector('.alert').style.display = "none";
-    },3000);
+    },4000);
 
     document.getElementById('contactForm').reset();
 
@@ -45,13 +43,11 @@ const firebaseConfig = {
     return document.getElementById(id).value;
   }
 
-  function saveMessage(name,company, email, phone, message){
+  function saveMessage(name, email, message){
     var newMessageRef = messageRef.push();
     newMessageRef.set({
         name: name,
-        company: company,
         email: email,
-        phone: phone,
         message: message
     });
   }

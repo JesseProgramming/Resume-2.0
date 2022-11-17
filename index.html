@@ -4,126 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Jesse James Clem, Front End Engineer in the Greater Seattle Area. Creating creative and unique websites to best serve your business.">
+    <meta name="keywords" content="Web Developer, Front End Engineer, Front End Developer, Web Designer, Olympia, Tumwater, Lacey, Seattle, Website Creation">
+    <meta name="author" content="Jesse Clem">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    <title>Jesse's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="animations.js"></script>
 </head>
 <body>
     <div id="background-container">
         <div id="background-gradient"></div>
         <div id="background-overlay"></div>
         <div id="planets"></div>
-
     </div>
-    <button type="button" id="resume-button" class="tooltip"> <img src="icons\paper-file-text.svg">
-        <span class="tooltiptext">Resume</span>
-    </button>
+    <nav>
+        <a href="#background-container">Top</a>
+        <a href="#main-projects-container">Projects</a>
+        <a href="#skills-and-about">Skills</a>
+        <a href="#contact-and-resume">Contact</a>
+    </nav>
+    <a href="files\resume.pdf" download="Jesse James Clem Resume">
+        <button type="button" id="resume-button" class="tooltip"> <img src="icons\paper-file-text.svg">
+            <span class="tooltiptext">Resume</span>
+        </button>
+    </a>
+    <div class="alert">Your message has been sent</div>
 
     </div>
     <div id="top-main-container">
         <div id="top-landing-container">
-            <h2>Hi There! I'm Jesse :)</h2>
-            <h1>A Frontend Engineer. I create stylized sites with highly optimized code.</h1>
-            <h3>Over 5 years of experience working with programming tools to deliver quality results to clients. I have expert knowledge of frontend engineering, software testing, and web development.</h3>
-            <input type="button" value="Hire Me Now!">
+            <h2>Hi, I'm Jesse :)</h2>
+            <h1>I'm Frontend Engineer from the greater Seattle area. I create stylized sites with with exceptional performance.</h1>
+            <h3>With over 5 years of experience working with industry leading programming tools, I have the expert level knowledge you need for frontend engineering, design, and deployment.</h3>
+            <a href="#form-container"><button id="btn-hire">Let's work together!</button></a>
         </div>
         <div id="top-hover-graphics">
-            <img src="slice-of-pizza.256x255.png">
+            <img src="icons/self-drawing.png">
         </div>
+        <a href="#main-projects-container" id="bounce-arrow">
+            <img src="icons/arrow-down.png" class="down-arrow-graphic">
+        </a>
     </div>
+    <div class="mainContainer">
     <div id="main-projects-container">
-        <h4 class="section-header">Projects</h4>
-        <div id="projects-container">
-            <div id="card-container">
-                <div class="card">
-                    <img src="project-pictures\TeslaPage.JPG">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Tesla Landing Page Clone
-                        </h3>
-                        <p class="card-description">
-                            A clone project of Tesla's landing page. I've managed to fix several bugs found on the live Tesla site, and managed to score higher rankings in performance and SEO using Google Lighthouse.
-                        </p>
-                        <div class="card-buttons">
-                            <input type="button" value="View Project">
-                            <input type="button" value="View Code">
+        <div id="project-container-alignment">
+            <h4 class="section-header">Projects</h4>
+            <div id="projects-container">
+                <div id="card-container">
+                    <div class="card">
+                        <img src="project-pictures\TeslaPage.JPG">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Tesla Landing Page Clone
+                            </h3>
+                            <p class="card-description">
+                                A clone project of Tesla's landing page. I've managed to fix several bugs found on the live Tesla site, and managed to score higher rankings in performance and SEO using Google Lighthouse.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="https://jjcprogramming.com/projects/TeslaLanding/index.html" target="_blank"><button type="button" class="btn-projects btn-view-project">View Project</button></a>
+                                <a href="https://github.com/JessePython/Tesla-Landing-Page" target="_blank"><button type="button" class="btn-projects btn-view-code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="project-pictures\adminDashboard.png">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Admin Dashboard
+                            </h3>
+                            <p class="card-description">
+                                A complex multi-page dashboard app to track product sales. Charts were created using Charts.js. Light theme and dark theme available.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="https://jjcprogramming.com/projects/AdminDashboard/index.html" target="_blank"><button type="button" class="btn-projects btn-view-project">View Project</button></a>
+                                <a href="https://github.com/JesseProgramming/AdminDashboard" target="_blank"><button type="button" class="btn-projects btn-view-code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="project-pictures\shot1.PNG">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Day Dots Reference
+                            </h3>
+                            <p class="card-description">
+                                A tool designed to eliminate human error on mislabeling food products, to prevent food waste and health hazards. Deployed in multiple restaurants.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="https://jjcprogramming.com/projects/DayDots/index.html" target="_blank"><button type="button" class="btn-projects btn-view-project">View Project</button></a>
+                                <a href="https://github.com/JesseProgramming/DayDotsv4" target="_blank"><button type="button" class="btn-projects btn-view-code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="project-pictures\resumesite.png">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Resume Site 2.0
+                            </h3>
+                            <p class="card-description">
+                                My personal online resume site. Built using scalable code in React so adding new content is simple and all handled in components.
+                            </p>
+                            <div class="card-buttons">
+                                <a href="https://github.com/JesseProgramming/Resume-2.0" target="_blank"><button type="button" class="btn-projects btn-view-code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="project-pictures\preview.png">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Ecommerce Site
+                            </h3>
+                            <p class="card-description">
+                                Coming soon.
+        
+        
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="project-pictures\adminDashboard.png">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Admin Dashboard
-                        </h3>
-                        <p class="card-description">
-                            A complex multi-page dashboard app to track product sales. Charts were created using Charts.js. Light theme and dark theme available.
-                        </p>
-                        <div class="card-buttons">
-                            <input type="button" value="View Project">
-                            <input type="button" value="View Code">
-                        </div>
+                <br>
+                <div id="top-icon-bar">
+                    <div class="icon-bar-item">
+                        <img src="icons\mobile-phone.svg" class="svg-filter">
+                        <p>Mobile Friendly</p>
+                    </div>
+                    <div class="icon-bar-item">
+                        <img src="icons\web.svg" class="svg-filter">
+                    <p>Search Engine Optimized</p>
+                    </div>
+                    <div class="icon-bar-item">
+                        <img src="icons\accessible.svg" class="svg-filter">
+                    <p>Accessible</p>
+                    </div>
+                    <div class="icon-bar-item">
+                        <img src="icons\tachometer-fast-alt.svg" class="svg-filter">
+                    <p>High Performing</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="project-pictures\shot1.PNG">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Day Dots Reference
-                        </h3>
-                        <p class="card-description">
-                            A tool designed to help the restaurant industry take out human error on mislabeling food products, to prevent food waste and health hazards. Successfully deployed in multiple restaurants and improved workplace efficiency.
-                        </p>
-                        <div class="card-buttons">
-                            <input type="button" value="View Project">
-                            <input type="button" value="View Code">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="project-pictures\31367.jpg">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Resume Site
-                        </h3>
-                        <p class="card-description">
-                            My personal online resume site. Built using scalable code in React so adding new content is simple and all handled in one respective component.
-                        </p>
-                        <div class="card-buttons">
-                            <input type="button" value="View Project">
-                            <input type="button" value="View Code">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="project-pictures\preview.png">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Ecommerce Site
-                        </h3>
-                        <p class="card-description">
-                            Coming soon.
-    
-    
-                        </p>
-                        <div class="card-buttons">
-                            <input type="button" value="View Project">
-                            <input type="button" value="View Code">
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
-        </div>
-        <div id="top-icon-bar">
-            <img src="icons\mobile-phone.svg" class="svg-filter">
-            <p>Mobile Friendly</p>
-            <img src="icons\web.svg" class="svg-filter">
-            <p>Search Engine Optimized</p>
-            <img src="icons\accessible.svg" class="svg-filter">
-            <p>Accessible</p>
-            <img src="icons\tachometer-fast-alt.svg" class="svg-filter">
-            <p>High Performing</p>
         </div>
     </div>
     <div id="skills-and-about">
@@ -162,16 +189,12 @@
                 <p>jQuery</p>
             </div>
             <div class="skill-cards">
-                <img src="skills-icons\python.256x254.png" class="skill-icons">
-                <p>Python</p>
-            </div>
-            <div class="skill-cards">
-                <img src="skills-icons\c-sharp-c.456x512.png" class="skill-icons">
-                <p>C#</p>
-            </div>
-            <div class="skill-cards">
                 <img src="skills-icons\php.256x256.png" class="skill-icons">
                 <p>PHP</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\wordpress.256x256 (1).png" class="skill-icons">
+                <p>Wordpress</p>
             </div>
             <div class="skill-cards">
                 <img src="skills-icons\git.256x256.png" class="skill-icons">
@@ -190,8 +213,8 @@
                 <p>Babel</p>
             </div>
             <div class="skill-cards">
-                <img src="skills-icons\wordpress.256x256 (1).png" class="skill-icons">
-                <p>Wordpress</p>
+                <img src="skills-icons\python.256x254.png" class="skill-icons">
+                <p>Python</p>
             </div>
             <div class="skill-cards">
                 <img src="skills-icons\chrome-devtools.256x256.png" class="skill-icons">
@@ -205,13 +228,21 @@
                 <img src="skills-icons\file-type-firebase.187x256.png" class="skill-icons">
                 <p>FireBase</p>
             </div>
+            <div class="skill-cards">
+                <img src="skills-icons\adobe-photoshop.256x256.png" class="skill-icons">
+                <p>Photoshop</p>
+            </div>
+            <div class="skill-cards">
+                <img src="skills-icons\adobe-illustrator.256x256.png" class="skill-icons">
+                <p>Illustrator</p>
+            </div>
         </div>
         <div id="random-facts">
             <h4 class="section-header">3 random facts about me</h4>
             <ol>
                 <li>I'm part 107 certified by the FAA to fly drones commercially.</li>
                 <li>I was nationally recognized by Red Robin as their biggest fan when I was a kid.</li>
-                <li>As hobbies, I'm really into in game design, robotics, animation, and voice acting.</li>
+                <li>For hobbies, I'm really into in game design, robotics, animation, and voice acting.</li>
             </ol>
         </div>
     </div>
@@ -220,30 +251,24 @@
         <br>
         <h4 class="section-header">Let's get in contact!</h4>
         <div id="personals-container">
-            <a href="">JesseClemProgramming@gmail.com</a>
-            <a href="">1(360)701-2737</a>
-            <a href=""><img src="icons\github.svg">GitHub</a>
-            <a href=""><img src="icons\social-linkedin.svg">Linkedin</a>
+            <a href="mailto:JesseClemProgramming@gmail.com" target="_blank"><img src="icons\email.svg">  <p>JesseClemProgramming@gmail.com</p></a>
+            <a href="tel:+13607012737"><img src="icons\alternate-phone.svg" width="30px">  <p>1(360)701-2737</p></a>
+            <a href="https://github.com/JesseProgramming?tab=repositories" target="_blank"><img src="icons\github.svg">  <p>GitHub</p></a>
+            <a href="https://www.linkedin.com/in/jesse-clem/" target="_blank"><img src="icons\social-linkedin.svg">  <p>Linkedin</p></a>
         </div>
         <div id="form-container">
             <form id="contactForm">
 
-                <div class="alert">Your message has been sent</div>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="firstname" placeholder="Your name">
                 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text" placeholder="Email">
 
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="lastname" placeholder="555-555-5555">
+                <label for="name">Name<p>*</p></label>
+                <input type="text" id="name" name="name" placeholder="Name" maxlength="25" required>
+                
+                <label for="email">Email<p>*</p></label>
+                <input id="email" name="email" type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="45" required>
             
-                <label for="company">Company</label>
-                <input id="company" name="company" type="text" placeholder="Company Name">
-            
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message" style="height:135px"></textarea>
+                <label for="message">Message<p>*</p></label>
+                <textarea id="message" name="message" placeholder="Your Message" maxlength="1000" required></textarea>
                 <input type="submit" value="Submit">
                 <!--<input type="submit" value="Submit" class="g-recaptcha" 
                 data-sitekey="6LePYvkiAAAAAHkYnAzxuc3JxzVZHxdnHhxLkFil" 
@@ -252,6 +277,7 @@
               </form>
         </div>
     </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
 
